@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+body{
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background: #111;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.image img,canvas{
+    max-width: 45vw !important;
+    max-height: 60vh !important;
+}
+.upload input{
+    display: none;
+}
+.upload label{
+    color: #fff;
+    padding: 8px 20px;
+    border: 2px #fff dashed;
+    cursor: pointer;
+}
+.filters ul,
+.filters ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    direction: rtl;
+    color: #fff;
+}
+.filters ul li:last-child {
+    flex-direction: row;
+    justify-content: space-around;
+}
+.filters ul li a, span{
+    filter: hue-rotate();
+    cursor: pointer;
+    background: red;
+    width: 100px;
+    margin-top: 15px;
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 7px;
+}
+.filters ul li a:hover, span:hover{
+    background: rgb(252, 32, 32);
+
+}
